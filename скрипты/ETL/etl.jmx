@@ -1,0 +1,1266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="etl" enabled="true">
+      <stringProp name="TestPlan.comments">This test plan was created by the BlazeMeter converter v.3.1.23. Please contact support@blazemeter.com for further support.</stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+        <collectionProp name="HeaderManager.headers">
+          <elementProp name="sec-ch-ua" elementType="Header">
+            <stringProp name="Header.name">sec-ch-ua</stringProp>
+            <stringProp name="Header.value">&quot;Not?A_Brand&quot;;v=&quot;8&quot;, &quot;Chromium&quot;;v=&quot;108&quot;, &quot;Google Chrome&quot;;v=&quot;108&quot;</stringProp>
+          </elementProp>
+          <elementProp name="sec-ch-ua-mobile" elementType="Header">
+            <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+            <stringProp name="Header.value">?0</stringProp>
+          </elementProp>
+          <elementProp name="sec-ch-ua-platform" elementType="Header">
+            <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+            <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+          </elementProp>
+          <elementProp name="User-Agent" elementType="Header">
+            <stringProp name="Header.name">User-Agent</stringProp>
+            <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36</stringProp>
+          </elementProp>
+          <elementProp name="Sec-Fetch-Dest" elementType="Header">
+            <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+            <stringProp name="Header.value">empty</stringProp>
+          </elementProp>
+          <elementProp name="Sec-Fetch-Site" elementType="Header">
+            <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
+            <stringProp name="Header.value">same-origin</stringProp>
+          </elementProp>
+          <elementProp name="Sec-Fetch-Mode" elementType="Header">
+            <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
+            <stringProp name="Header.value">cors</stringProp>
+          </elementProp>
+        </collectionProp>
+      </HeaderManager>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="BASE_URL_1" elementType="Argument">
+            <stringProp name="Argument.name">BASE_URL_1</stringProp>
+            <stringProp name="Argument.value">etl.planeta-ovfs.planetanalytics.ru</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+        <stringProp name="HTTPSampler.domain"></stringProp>
+        <stringProp name="HTTPSampler.port"></stringProp>
+        <stringProp name="HTTPSampler.protocol"></stringProp>
+        <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+        <stringProp name="HTTPSampler.path"></stringProp>
+        <boolProp name="HTTPSampler.image_parser">true</boolProp>
+        <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+        <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+        <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+        <stringProp name="HTTPSampler.response_timeout"></stringProp>
+      </ConfigTestElement>
+      <hashTree/>
+      <DNSCacheManager guiclass="DNSCachePanel" testclass="DNSCacheManager" testname="DNS Cache Manager" enabled="true">
+        <collectionProp name="DNSCacheManager.servers"/>
+        <boolProp name="DNSCacheManager.clearEachIteration">true</boolProp>
+        <boolProp name="DNSCacheManager.isCustomResolver">false</boolProp>
+      </DNSCacheManager>
+      <hashTree/>
+      <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="true">
+        <collectionProp name="AuthManager.auth_list"/>
+        <boolProp name="AuthManager.controlledByThreadGroup">false</boolProp>
+      </AuthManager>
+      <hashTree/>
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+        <collectionProp name="CookieManager.cookies"/>
+        <boolProp name="CookieManager.clearEachIteration">true</boolProp>
+        <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
+      </CookieManager>
+      <hashTree/>
+      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
+        <boolProp name="clearEachIteration">true</boolProp>
+        <boolProp name="useExpires">false</boolProp>
+        <boolProp name="CacheManager.controlledByThread">false</boolProp>
+      </CacheManager>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group отладка" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">0</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="авторизация" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://etl.planeta-ovfs.planetanalytics.ru/api/v1/auth" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;user&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;21232f297a57a5a743894a0e4a801fc3&quot;,&quot;host&quot;:&quot;olap.n30-budget.x-dev.us&quot;,&quot;port&quot;:&quot;80&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/v1/auth</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="olap-host" elementType="Header">
+                  <stringProp name="Header.name">olap-host</stringProp>
+                  <stringProp name="Header.value"></stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="olap-sid" elementType="Header">
+                  <stringProp name="Header.name">olap-sid</stringProp>
+                  <stringProp name="Header.value"></stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://etl.planeta-ovfs.planetanalytics.ru/api/v1/project" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/v1/project</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="olap-host" elementType="Header">
+                  <stringProp name="Header.name">olap-host</stringProp>
+                  <stringProp name="Header.value">olap.n30-budget.x-dev.us:80</stringProp>
+                </elementProp>
+                <elementProp name="olap-sid" elementType="Header">
+                  <stringProp name="Header.name">olap-sid</stringProp>
+                  <stringProp name="Header.value">H9a0t6PuY68uG3muZ6Z7GcSpj3FpQ6Np</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://etl.planeta-ovfs.planetanalytics.ru/api/v1/build/info" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/v1/build/info</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="olap-host" elementType="Header">
+                  <stringProp name="Header.name">olap-host</stringProp>
+                  <stringProp name="Header.value">olap.n30-budget.x-dev.us:80</stringProp>
+                </elementProp>
+                <elementProp name="olap-sid" elementType="Header">
+                  <stringProp name="Header.name">olap-sid</stringProp>
+                  <stringProp name="Header.value">H9a0t6PuY68uG3muZ6Z7GcSpj3FpQ6Np</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="переход к проекту" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://etl.planeta-ovfs.planetanalytics.ru/app/modules/project/project.html" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">app/modules/project/project.html</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">text/html</stringProp>
+                </elementProp>
+                <elementProp name="olap-host" elementType="Header">
+                  <stringProp name="Header.name">olap-host</stringProp>
+                  <stringProp name="Header.value">olap.n30-budget.x-dev.us:80</stringProp>
+                </elementProp>
+                <elementProp name="olap-sid" elementType="Header">
+                  <stringProp name="Header.name">olap-sid</stringProp>
+                  <stringProp name="Header.value">H9a0t6PuY68uG3muZ6Z7GcSpj3FpQ6Np</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="задачи" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://etl.planeta-ovfs.planetanalytics.ru/app/modules/jobs/jobs.html" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">app/modules/jobs/jobs.html</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">text/html</stringProp>
+                </elementProp>
+                <elementProp name="olap-host" elementType="Header">
+                  <stringProp name="Header.name">olap-host</stringProp>
+                  <stringProp name="Header.value">olap.n30-budget.x-dev.us:80</stringProp>
+                </elementProp>
+                <elementProp name="olap-sid" elementType="Header">
+                  <stringProp name="Header.name">olap-sid</stringProp>
+                  <stringProp name="Header.value">H9a0t6PuY68uG3muZ6Z7GcSpj3FpQ6Np</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname=" выполнить" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://etl.planeta-ovfs.planetanalytics.ru/api/v1/execute" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+    &quot;project&quot;:&#xd;
+    {&#xd;
+        &quot;id&quot;: &quot;budget_test&quot;,&#xd;
+        &quot;name&quot;: &quot;budget_test&quot;,&#xd;
+        &quot;comment&quot;: &quot;Бюджетирование 2.0 Тест&quot;,&#xd;
+        &quot;variables&quot;:&#xd;
+        [],&#xd;
+        &quot;connections&quot;:&#xd;
+        [&#xd;
+            {&#xd;
+                &quot;type&quot;: &quot;ExcelFile&quot;,&#xd;
+                &quot;name&quot;: &quot;con_Excel_ФВ3&quot;,&#xd;
+                &quot;comment&quot;: &quot;Загрузка данных ФВ.3 из Excel&quot;,&#xd;
+                &quot;checksum&quot;: false,&#xd;
+                &quot;label&quot;: &quot;Excel&quot;,&#xd;
+                &quot;byDefault&quot;: false,&#xd;
+                &quot;fileName&quot;: &quot;Загрузка_ФВ3_1.xlsx&quot;,&#xd;
+                &quot;fileNameChecksum&quot;: null&#xd;
+            },&#xd;
+            {&#xd;
+                &quot;type&quot;: &quot;Planet&quot;,&#xd;
+                &quot;name&quot;: &quot;con_OLAP&quot;,&#xd;
+                &quot;comment&quot;: &quot;Планета budget_test&quot;,&#xd;
+                &quot;checksum&quot;: false,&#xd;
+                &quot;label&quot;: &quot;Планета&quot;,&#xd;
+                &quot;byDefault&quot;: false,&#xd;
+                &quot;database&quot;: &quot;budget_test&quot;,&#xd;
+                &quot;host&quot;: &quot;olap.nt-budget.x-dev.us&quot;,&#xd;
+                &quot;password&quot;: &quot;admin&quot;,&#xd;
+                &quot;passwordHash&quot;: null,&#xd;
+                &quot;port&quot;: &quot;80&quot;,&#xd;
+                &quot;user&quot;: &quot;admin&quot;&#xd;
+            },&#xd;
+            {&#xd;
+                &quot;type&quot;: &quot;ExcelFile&quot;,&#xd;
+                &quot;name&quot;: &quot;con_Excel_Справочники&quot;,&#xd;
+                &quot;comment&quot;: &quot;Загрузка Справочников из Excel&quot;,&#xd;
+                &quot;checksum&quot;: false,&#xd;
+                &quot;label&quot;: &quot;Excel&quot;,&#xd;
+                &quot;byDefault&quot;: false,&#xd;
+                &quot;fileName&quot;: &quot;Загрузка.xlsx&quot;,&#xd;
+                &quot;fileNameChecksum&quot;: null&#xd;
+            },&#xd;
+            {&#xd;
+                &quot;type&quot;: &quot;File&quot;,&#xd;
+                &quot;name&quot;: &quot;con_Excel_ФВ3_CSV&quot;,&#xd;
+                &quot;comment&quot;: &quot;Загрузка данных ФВ.3 из Excel&quot;,&#xd;
+                &quot;checksum&quot;: false,&#xd;
+                &quot;label&quot;: &quot;Файл&quot;,&#xd;
+                &quot;byDefault&quot;: false,&#xd;
+                &quot;fileName&quot;: &quot;Книга4.csv&quot;,&#xd;
+                &quot;fileNameChecksum&quot;: null,&#xd;
+                &quot;delimiter&quot;: &quot;;&quot;,&#xd;
+                &quot;encoding&quot;: &quot;UTF-8&quot;,&#xd;
+                &quot;header&quot;: true,&#xd;
+                &quot;quote&quot;: &quot;\&quot;&quot;&#xd;
+            },&#xd;
+            {&#xd;
+                &quot;type&quot;: &quot;File&quot;,&#xd;
+                &quot;name&quot;: &quot;con_Excel_ФВ3_1673271098277&quot;,&#xd;
+                &quot;comment&quot;: &quot;Загрузка данных ФВ.3 из Excel&quot;,&#xd;
+                &quot;checksum&quot;: false,&#xd;
+                &quot;label&quot;: &quot;Файл&quot;,&#xd;
+                &quot;byDefault&quot;: false,&#xd;
+                &quot;fileName&quot;: &quot;Книга11114.csv&quot;,&#xd;
+                &quot;fileNameChecksum&quot;: null,&#xd;
+                &quot;delimiter&quot;: &quot;;&quot;,&#xd;
+                &quot;encoding&quot;: null,&#xd;
+                &quot;header&quot;: true,&#xd;
+                &quot;quote&quot;: null&#xd;
+            },&#xd;
+            {&#xd;
+                &quot;type&quot;: &quot;Planet&quot;,&#xd;
+                &quot;name&quot;: &quot;DEFAULT_OLAP&quot;,&#xd;
+                &quot;checksum&quot;: false,&#xd;
+                &quot;label&quot;: &quot;Планета&quot;,&#xd;
+                &quot;byDefault&quot;: true,&#xd;
+                &quot;database&quot;: &quot;test&quot;,&#xd;
+                &quot;host&quot;: &quot;olap.planeta-ovfs.planetanalytics.ru&quot;,&#xd;
+                &quot;password&quot;: &quot;admin&quot;,&#xd;
+                &quot;passwordHash&quot;: null,&#xd;
+                &quot;port&quot;: &quot;7771&quot;,&#xd;
+                &quot;user&quot;: &quot;admin&quot;&#xd;
+            }&#xd;
+        ],&#xd;
+        &quot;extracts&quot;:&#xd;
+        [&#xd;
+            {&#xd;
+                &quot;type&quot;: &quot;Excel&quot;,&#xd;
+                &quot;name&quot;: &quot;ex_Excel_ФВ3&quot;,&#xd;
+                &quot;comment&quot;: &quot;Загрузка данных ФВ.3 из Excel&quot;,&#xd;
+                &quot;label&quot;: &quot;Excel&quot;,&#xd;
+                &quot;connection&quot;: &quot;con_Excel_ФВ3&quot;,&#xd;
+                &quot;sheet&quot;: &quot;ФВ3&quot;,&#xd;
+                &quot;startCell&quot;: &quot;A1&quot;,&#xd;
+                &quot;endCell&quot;: &quot;K&quot;,&#xd;
+                &quot;endRow&quot;: &quot;&quot;,&#xd;
+                &quot;header&quot;: true,&#xd;
+                &quot;aliasMap&quot;:&#xd;
+                [],&#xd;
+                &quot;autoDetect&quot;: true&#xd;
+            },&#xd;
+            {&#xd;
+                &quot;type&quot;: &quot;Cube&quot;,&#xd;
+                &quot;name&quot;: &quot;ex_ФВ3&quot;,&#xd;
+                &quot;comment&quot;: &quot;ФВ.3.&quot;,&#xd;
+                &quot;label&quot;: &quot;Куб&quot;,&#xd;
+                &quot;connection&quot;: &quot;con_OLAP&quot;,&#xd;
+                &quot;cube&quot;: &quot;ФВ.3. Бюджет выпуска&quot;,&#xd;
+                &quot;ignoreEmpty&quot;: true,&#xd;
+                &quot;baseElements&quot;: true,&#xd;
+                &quot;readRuleValues&quot;: false,&#xd;
+                &quot;cellType&quot;: &quot;both&quot;,&#xd;
+                &quot;queryFilters&quot;:&#xd;
+                [&#xd;
+                    {&#xd;
+                        &quot;dimension&quot;: &quot;32. Бизнес-показатели&quot;,&#xd;
+                        &quot;type&quot;: &quot;accept&quot;,&#xd;
+                        &quot;operator&quot;: &quot;equal&quot;,&#xd;
+                        &quot;value&quot;: &quot;1.1.&quot;,&#xd;
+                        &quot;mode&quot;: &quot;onlyNodes&quot;&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;dimension&quot;: &quot;6. Версия&quot;,&#xd;
+                        &quot;type&quot;: &quot;accept&quot;,&#xd;
+                        &quot;operator&quot;: &quot;equal&quot;,&#xd;
+                        &quot;value&quot;: &quot;6.1.&quot;,&#xd;
+                        &quot;mode&quot;: &quot;onlyNodes&quot;&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;dimension&quot;: &quot;8. Валюта&quot;,&#xd;
+                        &quot;type&quot;: &quot;accept&quot;,&#xd;
+                        &quot;operator&quot;: &quot;equal&quot;,&#xd;
+                        &quot;value&quot;: &quot;8.1.&quot;,&#xd;
+                        &quot;mode&quot;: &quot;onlyNodes&quot;&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;dimension&quot;: &quot;Показатели_1. Показатели&quot;,&#xd;
+                        &quot;type&quot;: &quot;accept&quot;,&#xd;
+                        &quot;operator&quot;: &quot;equal&quot;,&#xd;
+                        &quot;value&quot;: &quot;1.2.&quot;,&#xd;
+                        &quot;mode&quot;: &quot;onlyNodes&quot;&#xd;
+                    }&#xd;
+                ]&#xd;
+            },&#xd;
+            {&#xd;
+                &quot;type&quot;: &quot;Excel&quot;,&#xd;
+                &quot;name&quot;: &quot;ex_4&quot;,&#xd;
+                &quot;comment&quot;: &quot;Загрузка 4. Бухгалтерия Управляющей компании&quot;,&#xd;
+                &quot;label&quot;: &quot;Excel&quot;,&#xd;
+                &quot;connection&quot;: &quot;con_Excel_Справочники&quot;,&#xd;
+                &quot;sheet&quot;: &quot;4&quot;,&#xd;
+                &quot;startCell&quot;: &quot;A1&quot;,&#xd;
+                &quot;endCell&quot;: &quot;K&quot;,&#xd;
+                &quot;endRow&quot;: &quot;&quot;,&#xd;
+                &quot;header&quot;: true,&#xd;
+                &quot;aliasMap&quot;:&#xd;
+                [],&#xd;
+                &quot;autoDetect&quot;: true&#xd;
+            },&#xd;
+            {&#xd;
+                &quot;type&quot;: &quot;Excel&quot;,&#xd;
+                &quot;name&quot;: &quot;ex_10&quot;,&#xd;
+                &quot;comment&quot;: &quot;Загрузка 10. Номенклатура&quot;,&#xd;
+                &quot;label&quot;: &quot;Excel&quot;,&#xd;
+                &quot;connection&quot;: &quot;con_Excel_Справочники&quot;,&#xd;
+                &quot;sheet&quot;: &quot;10&quot;,&#xd;
+                &quot;startCell&quot;: &quot;A1&quot;,&#xd;
+                &quot;endCell&quot;: &quot;L&quot;,&#xd;
+                &quot;endRow&quot;: &quot;&quot;,&#xd;
+                &quot;header&quot;: true,&#xd;
+                &quot;aliasMap&quot;:&#xd;
+                [],&#xd;
+                &quot;autoDetect&quot;: true&#xd;
+            },&#xd;
+            {&#xd;
+                &quot;type&quot;: &quot;Excel&quot;,&#xd;
+                &quot;name&quot;: &quot;ex_14&quot;,&#xd;
+                &quot;comment&quot;: &quot;Загрузка 14. Статьи затрат&quot;,&#xd;
+                &quot;label&quot;: &quot;Excel&quot;,&#xd;
+                &quot;connection&quot;: &quot;con_Excel_Справочники&quot;,&#xd;
+                &quot;sheet&quot;: &quot;14&quot;,&#xd;
+                &quot;startCell&quot;: &quot;A1&quot;,&#xd;
+                &quot;endCell&quot;: &quot;K&quot;,&#xd;
+                &quot;endRow&quot;: &quot;&quot;,&#xd;
+                &quot;header&quot;: true,&#xd;
+                &quot;aliasMap&quot;:&#xd;
+                [],&#xd;
+                &quot;autoDetect&quot;: true&#xd;
+            },&#xd;
+            {&#xd;
+                &quot;type&quot;: &quot;Excel&quot;,&#xd;
+                &quot;name&quot;: &quot;ex_25&quot;,&#xd;
+                &quot;comment&quot;: &quot;Загрузка 25. Оргструктура&quot;,&#xd;
+                &quot;label&quot;: &quot;Excel&quot;,&#xd;
+                &quot;connection&quot;: &quot;con_Excel_Справочники&quot;,&#xd;
+                &quot;sheet&quot;: &quot;25&quot;,&#xd;
+                &quot;startCell&quot;: &quot;A1&quot;,&#xd;
+                &quot;endCell&quot;: &quot;J&quot;,&#xd;
+                &quot;endRow&quot;: &quot;&quot;,&#xd;
+                &quot;header&quot;: true,&#xd;
+                &quot;aliasMap&quot;:&#xd;
+                [],&#xd;
+                &quot;autoDetect&quot;: true&#xd;
+            },&#xd;
+            {&#xd;
+                &quot;type&quot;: &quot;File&quot;,&#xd;
+                &quot;name&quot;: &quot;ex_Excel_ФВ3_CSV&quot;,&#xd;
+                &quot;comment&quot;: null,&#xd;
+                &quot;label&quot;: &quot;Файл&quot;,&#xd;
+                &quot;connectionType&quot;: &quot;con_Excel_ФВ3_1673271098277&quot;,&#xd;
+                &quot;headers&quot;:&#xd;
+                [&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;2. Ед. изм.&quot;,&#xd;
+                        &quot;position&quot;: 1,&#xd;
+                        &quot;index&quot;: 0,&#xd;
+                        &quot;sortIndex&quot;: 0,&#xd;
+                        &quot;order&quot;: null,&#xd;
+                        &quot;selected&quot;: true&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;3. БЕ&quot;,&#xd;
+                        &quot;position&quot;: 2,&#xd;
+                        &quot;index&quot;: 1,&#xd;
+                        &quot;sortIndex&quot;: 1,&#xd;
+                        &quot;order&quot;: null,&#xd;
+                        &quot;selected&quot;: true&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;4. ЦФО&quot;,&#xd;
+                        &quot;position&quot;: 3,&#xd;
+                        &quot;index&quot;: 2,&#xd;
+                        &quot;sortIndex&quot;: 2,&#xd;
+                        &quot;order&quot;: null,&#xd;
+                        &quot;selected&quot;: true&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;5. Сценарий&quot;,&#xd;
+                        &quot;position&quot;: 4,&#xd;
+                        &quot;index&quot;: 3,&#xd;
+                        &quot;sortIndex&quot;: 3,&#xd;
+                        &quot;order&quot;: null,&#xd;
+                        &quot;selected&quot;: true&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;6. Версия&quot;,&#xd;
+                        &quot;position&quot;: 5,&#xd;
+                        &quot;index&quot;: 4,&#xd;
+                        &quot;sortIndex&quot;: 4,&#xd;
+                        &quot;order&quot;: null,&#xd;
+                        &quot;selected&quot;: true&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;7. Период&quot;,&#xd;
+                        &quot;position&quot;: 6,&#xd;
+                        &quot;index&quot;: 5,&#xd;
+                        &quot;sortIndex&quot;: 5,&#xd;
+                        &quot;order&quot;: null,&#xd;
+                        &quot;selected&quot;: true&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;8. Валюта&quot;,&#xd;
+                        &quot;position&quot;: 7,&#xd;
+                        &quot;index&quot;: 6,&#xd;
+                        &quot;sortIndex&quot;: 6,&#xd;
+                        &quot;order&quot;: null,&#xd;
+                        &quot;selected&quot;: true&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;10. Номенклатура&quot;,&#xd;
+                        &quot;position&quot;: 8,&#xd;
+                        &quot;index&quot;: 7,&#xd;
+                        &quot;sortIndex&quot;: 7,&#xd;
+                        &quot;order&quot;: null,&#xd;
+                        &quot;selected&quot;: true&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;32. Бизнес-показатели&quot;,&#xd;
+                        &quot;position&quot;: 9,&#xd;
+                        &quot;index&quot;: 8,&#xd;
+                        &quot;sortIndex&quot;: 8,&#xd;
+                        &quot;order&quot;: null,&#xd;
+                        &quot;selected&quot;: true&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;Показатели_1. Показатели&quot;,&#xd;
+                        &quot;position&quot;: 10,&#xd;
+                        &quot;index&quot;: 9,&#xd;
+                        &quot;sortIndex&quot;: 9,&#xd;
+                        &quot;order&quot;: null,&#xd;
+                        &quot;selected&quot;: true&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;Value&quot;,&#xd;
+                        &quot;position&quot;: 11,&#xd;
+                        &quot;index&quot;: 10,&#xd;
+                        &quot;sortIndex&quot;: 10,&#xd;
+                        &quot;order&quot;: null,&#xd;
+                        &quot;selected&quot;: true&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;column12&quot;,&#xd;
+                        &quot;position&quot;: 12,&#xd;
+                        &quot;index&quot;: 11,&#xd;
+                        &quot;sortIndex&quot;: null,&#xd;
+                        &quot;order&quot;: null,&#xd;
+                        &quot;selected&quot;: true&#xd;
+                    }&#xd;
+                ]&#xd;
+            }&#xd;
+        ],&#xd;
+        &quot;transforms&quot;:&#xd;
+        [&#xd;
+            {&#xd;
+                &quot;type&quot;: &quot;TableTransform&quot;,&#xd;
+                &quot;name&quot;: &quot;tr_ФВ3_экспорт&quot;,&#xd;
+                &quot;comment&quot;: &quot;Загрузка ФВ3 из Excel&quot;,&#xd;
+                &quot;transformType&quot;: &quot;TableNormalization&quot;,&#xd;
+                &quot;source&quot;: &quot;ex_Excel_ФВ3&quot;,&#xd;
+                &quot;dbName&quot;: &quot;16&quot;,&#xd;
+                &quot;cubeName&quot;: &quot;240&quot;,&#xd;
+                &quot;normalize&quot;: &quot;Показатели_1. Показатели&quot;,&#xd;
+                &quot;valuename&quot;: &quot;Value&quot;,&#xd;
+                &quot;coordinates&quot;:&#xd;
+                [&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;2. Ед. изм.&quot;,&#xd;
+                        &quot;nameref&quot;: &quot;2. Ед. изм.&quot;,&#xd;
+                        &quot;constant&quot;: false&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;3. БЕ&quot;,&#xd;
+                        &quot;nameref&quot;: &quot;3. БЕ&quot;,&#xd;
+                        &quot;constant&quot;: false&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;4. ЦФО&quot;,&#xd;
+                        &quot;nameref&quot;: &quot;4. ЦФО&quot;,&#xd;
+                        &quot;constant&quot;: false&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;5. Сценарий&quot;,&#xd;
+                        &quot;nameref&quot;: &quot;5. Сценарий&quot;,&#xd;
+                        &quot;constant&quot;: false&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;6. Версия&quot;,&#xd;
+                        &quot;nameref&quot;: &quot;6. Версия&quot;,&#xd;
+                        &quot;constant&quot;: false&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;7. Период&quot;,&#xd;
+                        &quot;nameref&quot;: &quot;7. Период&quot;,&#xd;
+                        &quot;constant&quot;: false&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;8. Валюта&quot;,&#xd;
+                        &quot;nameref&quot;: &quot;8. Валюта&quot;,&#xd;
+                        &quot;constant&quot;: false&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;10. Номенклатура&quot;,&#xd;
+                        &quot;nameref&quot;: &quot;10. Номенклатура&quot;,&#xd;
+                        &quot;constant&quot;: false&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;32. Бизнес-показатели&quot;,&#xd;
+                        &quot;nameref&quot;: &quot;32. Бизнес-показатели&quot;,&#xd;
+                        &quot;constant&quot;: false&#xd;
+                    }&#xd;
+                ],&#xd;
+                &quot;measures&quot;:&#xd;
+                [&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;1.2.&quot;,&#xd;
+                        &quot;nameref&quot;: &quot;Value&quot;,&#xd;
+                        &quot;aggregate&quot;: &quot;none&quot;,&#xd;
+                        &quot;constant&quot;: false&#xd;
+                    }&#xd;
+                ]&#xd;
+            },&#xd;
+            {&#xd;
+                &quot;type&quot;: &quot;TreePC&quot;,&#xd;
+                &quot;name&quot;: &quot;tr_4&quot;,&#xd;
+                &quot;comment&quot;: &quot;4. Бухгалтерия Управляющей компании - Элементы (иерархия)&quot;,&#xd;
+                &quot;transformType&quot;: null,&#xd;
+                &quot;source&quot;: &quot;ex_4&quot;,&#xd;
+                &quot;parent&quot;:&#xd;
+                {&#xd;
+                    &quot;name&quot;: &quot;Код родительского элемента&quot;,&#xd;
+                    &quot;isConst&quot;: false&#xd;
+                },&#xd;
+                &quot;child&quot;:&#xd;
+                {&#xd;
+                    &quot;name&quot;: &quot;Код элемента&quot;,&#xd;
+                    &quot;isConst&quot;: false&#xd;
+                },&#xd;
+                &quot;weight&quot;:&#xd;
+                {&#xd;
+                    &quot;name&quot;: &quot;1&quot;,&#xd;
+                    &quot;isConst&quot;: true&#xd;
+                },&#xd;
+                &quot;attributes&quot;:&#xd;
+                [&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;NAME&quot;,&#xd;
+                        &quot;input&quot;: &quot;Наименование элемента&quot;,&#xd;
+                        &quot;index&quot;: &quot;0&quot;&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;Функция&quot;,&#xd;
+                        &quot;input&quot;: &quot;Функция&quot;,&#xd;
+                        &quot;index&quot;: &quot;1&quot;&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;БЕ&quot;,&#xd;
+                        &quot;input&quot;: &quot;БЕ&quot;,&#xd;
+                        &quot;index&quot;: &quot;2&quot;&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;Тип ЦФО&quot;,&#xd;
+                        &quot;input&quot;: &quot;Тип ЦФО&quot;,&#xd;
+                        &quot;index&quot;: &quot;3&quot;&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;Выборка 1 (применимость для сценарных условий)&quot;,&#xd;
+                        &quot;input&quot;: &quot;Выборка 1 (применимость для сценарных условий)&quot;,&#xd;
+                        &quot;index&quot;: &quot;4&quot;&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;Дата начала действия&quot;,&#xd;
+                        &quot;input&quot;: &quot;Дата начала действия&quot;,&#xd;
+                        &quot;index&quot;: &quot;5&quot;&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;Дата окончания действия&quot;,&#xd;
+                        &quot;input&quot;: &quot;Дата окончания действия&quot;,&#xd;
+                        &quot;index&quot;: &quot;6&quot;&#xd;
+                    }&#xd;
+                ]&#xd;
+            },&#xd;
+            {&#xd;
+                &quot;type&quot;: &quot;TreePC&quot;,&#xd;
+                &quot;name&quot;: &quot;tr_10&quot;,&#xd;
+                &quot;comment&quot;: &quot;10. Номенклатура - Элементы (иерархия)&quot;,&#xd;
+                &quot;transformType&quot;: null,&#xd;
+                &quot;source&quot;: &quot;ex_10&quot;,&#xd;
+                &quot;parent&quot;:&#xd;
+                {&#xd;
+                    &quot;name&quot;: &quot;Код родительского элемента&quot;,&#xd;
+                    &quot;isConst&quot;: false&#xd;
+                },&#xd;
+                &quot;child&quot;:&#xd;
+                {&#xd;
+                    &quot;name&quot;: &quot;Код элемента&quot;,&#xd;
+                    &quot;isConst&quot;: false&#xd;
+                },&#xd;
+                &quot;weight&quot;:&#xd;
+                {&#xd;
+                    &quot;name&quot;: &quot;1&quot;,&#xd;
+                    &quot;isConst&quot;: true&#xd;
+                },&#xd;
+                &quot;attributes&quot;:&#xd;
+                [&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;NAME&quot;,&#xd;
+                        &quot;input&quot;: &quot;Наименование элемента&quot;,&#xd;
+                        &quot;index&quot;: &quot;0&quot;&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;Ед. изм. (основная)&quot;,&#xd;
+                        &quot;input&quot;: &quot;Ед. изм. (основная)&quot;,&#xd;
+                        &quot;index&quot;: &quot;1&quot;&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;Ед. изм. (альтерн.)&quot;,&#xd;
+                        &quot;input&quot;: &quot;Ед. изм. (альтерн.)&quot;,&#xd;
+                        &quot;index&quot;: &quot;2&quot;&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;Направление деятельности&quot;,&#xd;
+                        &quot;input&quot;: &quot;Направление деятельности&quot;,&#xd;
+                        &quot;index&quot;: &quot;3&quot;&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;Функция&quot;,&#xd;
+                        &quot;input&quot;: &quot;Функция&quot;,&#xd;
+                        &quot;index&quot;: &quot;4&quot;&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;Выборка 1 (применимость для сценарных условий)&quot;,&#xd;
+                        &quot;input&quot;: &quot;Выборка 1 (применимость для сценарных условий)&quot;,&#xd;
+                        &quot;index&quot;: &quot;5&quot;&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;Выборка 2 (применимость для планирования)&quot;,&#xd;
+                        &quot;input&quot;: &quot;Выборка 2 (применимость для планирования)&quot;,&#xd;
+                        &quot;index&quot;: &quot;6&quot;&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;Выборка 3 (нормируемый ресурс)&quot;,&#xd;
+                        &quot;input&quot;: &quot;Выборка 3 (нормируемый ресурс)&quot;,&#xd;
+                        &quot;index&quot;: &quot;7&quot;&#xd;
+                    }&#xd;
+                ]&#xd;
+            },&#xd;
+            {&#xd;
+                &quot;type&quot;: &quot;TreePC&quot;,&#xd;
+                &quot;name&quot;: &quot;tr_14&quot;,&#xd;
+                &quot;comment&quot;: &quot;14. Статьи затрат - Элементы (иерархия)&quot;,&#xd;
+                &quot;transformType&quot;: null,&#xd;
+                &quot;source&quot;: &quot;ex_14&quot;,&#xd;
+                &quot;parent&quot;:&#xd;
+                {&#xd;
+                    &quot;name&quot;: &quot;Код родительского элемента&quot;,&#xd;
+                    &quot;isConst&quot;: false&#xd;
+                },&#xd;
+                &quot;child&quot;:&#xd;
+                {&#xd;
+                    &quot;name&quot;: &quot;Код элемента&quot;,&#xd;
+                    &quot;isConst&quot;: false&#xd;
+                },&#xd;
+                &quot;weight&quot;:&#xd;
+                {&#xd;
+                    &quot;name&quot;: &quot;1&quot;,&#xd;
+                    &quot;isConst&quot;: true&#xd;
+                },&#xd;
+                &quot;attributes&quot;:&#xd;
+                [&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;NAME&quot;,&#xd;
+                        &quot;input&quot;: &quot;Наименование элемента&quot;,&#xd;
+                        &quot;index&quot;: &quot;0&quot;&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;Тип затрат&quot;,&#xd;
+                        &quot;input&quot;: &quot;Тип затрат&quot;,&#xd;
+                        &quot;index&quot;: &quot;1&quot;&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;Элемент затрат&quot;,&#xd;
+                        &quot;input&quot;: &quot;Элемент затрат&quot;,&#xd;
+                        &quot;index&quot;: &quot;2&quot;&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;ЦФО-владелец статьи&quot;,&#xd;
+                        &quot;input&quot;: &quot;ЦФО-владелец статьи&quot;,&#xd;
+                        &quot;index&quot;: &quot;3&quot;&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;Типовые условия оплат&quot;,&#xd;
+                        &quot;input&quot;: &quot;Типовые условия оплат&quot;,&#xd;
+                        &quot;index&quot;: &quot;4&quot;&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;Участвует в расчете налога на прибыль&quot;,&#xd;
+                        &quot;input&quot;: &quot;Участвует в расчете налога на прибыль&quot;,&#xd;
+                        &quot;index&quot;: &quot;5&quot;&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;Статья БДР&quot;,&#xd;
+                        &quot;input&quot;: &quot;Статья БДР&quot;,&#xd;
+                        &quot;index&quot;: &quot;6&quot;&#xd;
+                    }&#xd;
+                ]&#xd;
+            },&#xd;
+            {&#xd;
+                &quot;type&quot;: &quot;TreePC&quot;,&#xd;
+                &quot;name&quot;: &quot;tr_25&quot;,&#xd;
+                &quot;comment&quot;: &quot;25. Оргструктура - Элементы (иерархия)&quot;,&#xd;
+                &quot;transformType&quot;: null,&#xd;
+                &quot;source&quot;: &quot;ex_25&quot;,&#xd;
+                &quot;parent&quot;:&#xd;
+                {&#xd;
+                    &quot;name&quot;: &quot;Код родительского элемента&quot;,&#xd;
+                    &quot;isConst&quot;: false&#xd;
+                },&#xd;
+                &quot;child&quot;:&#xd;
+                {&#xd;
+                    &quot;name&quot;: &quot;Код элемента&quot;,&#xd;
+                    &quot;isConst&quot;: false&#xd;
+                },&#xd;
+                &quot;weight&quot;:&#xd;
+                {&#xd;
+                    &quot;name&quot;: &quot;1&quot;,&#xd;
+                    &quot;isConst&quot;: true&#xd;
+                },&#xd;
+                &quot;attributes&quot;:&#xd;
+                [&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;NAME&quot;,&#xd;
+                        &quot;input&quot;: &quot;Наименование элемента&quot;,&#xd;
+                        &quot;index&quot;: &quot;0&quot;&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;Исторический код элемента&quot;,&#xd;
+                        &quot;input&quot;: &quot;Исторический код элемента&quot;,&#xd;
+                        &quot;index&quot;: &quot;1&quot;&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;ЦФО&quot;,&#xd;
+                        &quot;input&quot;: &quot;ЦФО&quot;,&#xd;
+                        &quot;index&quot;: &quot;2&quot;&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;БЕ&quot;,&#xd;
+                        &quot;input&quot;: &quot;БЕ&quot;,&#xd;
+                        &quot;index&quot;: &quot;3&quot;&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;Дата начала действия&quot;,&#xd;
+                        &quot;input&quot;: &quot;Дата начала действия&quot;,&#xd;
+                        &quot;index&quot;: &quot;4&quot;&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;Дата окончания действия&quot;,&#xd;
+                        &quot;input&quot;: &quot;Дата окончания действия&quot;,&#xd;
+                        &quot;index&quot;: &quot;5&quot;&#xd;
+                    }&#xd;
+                ]&#xd;
+            }&#xd;
+        ],&#xd;
+        &quot;loads&quot;:&#xd;
+        [&#xd;
+            {&#xd;
+                &quot;type&quot;: &quot;Cube&quot;,&#xd;
+                &quot;name&quot;: &quot;load_ФВ3&quot;,&#xd;
+                &quot;source&quot;: &quot;tr_ФВ3_экспорт&quot;,&#xd;
+                &quot;comment&quot;: &quot;Загрузка данных ФВ.3 из Excel&quot;,&#xd;
+                &quot;label&quot;: &quot;Cube&quot;,&#xd;
+                &quot;connection&quot;: &quot;con_OLAP&quot;,&#xd;
+                &quot;cubeName&quot;: &quot;ФВ.3. Бюджет выпуска&quot;,&#xd;
+                &quot;mode&quot;: &quot;Insert&quot;,&#xd;
+                &quot;splashMode&quot;: &quot;Set&quot;,&#xd;
+                &quot;add&quot;: false&#xd;
+            },&#xd;
+            {&#xd;
+                &quot;type&quot;: &quot;Dimension&quot;,&#xd;
+                &quot;name&quot;: &quot;load_4&quot;,&#xd;
+                &quot;source&quot;: &quot;tr_4&quot;,&#xd;
+                &quot;comment&quot;: &quot;4. Бухгалтерия Управляющей компании  - Элементы (иерархия)&quot;,&#xd;
+                &quot;label&quot;: &quot;Dimension&quot;,&#xd;
+                &quot;attributesLoad&quot;: &quot;Update&quot;,&#xd;
+                &quot;connection&quot;: &quot;con_OLAP&quot;,&#xd;
+                &quot;consolidationsLoad&quot;: &quot;Update&quot;,&#xd;
+                &quot;dimension&quot;: &quot;4. ЦФО&quot;,&#xd;
+                &quot;elementsLoad&quot;: &quot;Update&quot;&#xd;
+            },&#xd;
+            {&#xd;
+                &quot;type&quot;: &quot;Dimension&quot;,&#xd;
+                &quot;name&quot;: &quot;load_10&quot;,&#xd;
+                &quot;source&quot;: &quot;tr_10&quot;,&#xd;
+                &quot;comment&quot;: &quot;10. Номенклатура - Элементы (иерархия)&quot;,&#xd;
+                &quot;label&quot;: &quot;Dimension&quot;,&#xd;
+                &quot;attributesLoad&quot;: &quot;Update&quot;,&#xd;
+                &quot;connection&quot;: &quot;con_OLAP&quot;,&#xd;
+                &quot;consolidationsLoad&quot;: &quot;Update&quot;,&#xd;
+                &quot;dimension&quot;: &quot;10. Номенклатура&quot;,&#xd;
+                &quot;elementsLoad&quot;: &quot;Update&quot;&#xd;
+            },&#xd;
+            {&#xd;
+                &quot;type&quot;: &quot;Dimension&quot;,&#xd;
+                &quot;name&quot;: &quot;load_14&quot;,&#xd;
+                &quot;source&quot;: &quot;ex_14&quot;,&#xd;
+                &quot;comment&quot;: &quot;14. Статьи затрат - Элементы (иерархия)&quot;,&#xd;
+                &quot;label&quot;: &quot;Dimension&quot;,&#xd;
+                &quot;attributesLoad&quot;: &quot;Update&quot;,&#xd;
+                &quot;connection&quot;: &quot;con_OLAP&quot;,&#xd;
+                &quot;consolidationsLoad&quot;: &quot;Update&quot;,&#xd;
+                &quot;dimension&quot;: &quot;14. Статьи затрат&quot;,&#xd;
+                &quot;elementsLoad&quot;: &quot;Update&quot;&#xd;
+            },&#xd;
+            {&#xd;
+                &quot;type&quot;: &quot;Dimension&quot;,&#xd;
+                &quot;name&quot;: &quot;load_25&quot;,&#xd;
+                &quot;source&quot;: &quot;tr_25&quot;,&#xd;
+                &quot;comment&quot;: &quot;25. Оргструктура - Элементы (иерархия)&quot;,&#xd;
+                &quot;label&quot;: &quot;Dimension&quot;,&#xd;
+                &quot;attributesLoad&quot;: &quot;Update&quot;,&#xd;
+                &quot;connection&quot;: &quot;con_OLAP&quot;,&#xd;
+                &quot;consolidationsLoad&quot;: &quot;Update&quot;,&#xd;
+                &quot;dimension&quot;: &quot;25. Оргструктура&quot;,&#xd;
+                &quot;elementsLoad&quot;: &quot;Update&quot;&#xd;
+            }&#xd;
+        ],&#xd;
+        &quot;jobs&quot;:&#xd;
+        [&#xd;
+            {&#xd;
+                &quot;name&quot;: &quot;task_Загрузка_ФВ3_из_Excel&quot;,&#xd;
+                &quot;executions&quot;:&#xd;
+                [&#xd;
+                    {&#xd;
+                        &quot;type&quot;: &quot;Load&quot;,&#xd;
+                        &quot;nameref&quot;: &quot;load_ФВ3&quot;,&#xd;
+                        &quot;ftpFileExpr&quot;: null&#xd;
+                    }&#xd;
+                ],&#xd;
+                &quot;comment&quot;: &quot;admin&quot;,&#xd;
+                &quot;fromFtp&quot;: false,&#xd;
+                &quot;ftpConfig&quot;:&#xd;
+                {&#xd;
+                    &quot;password&quot;: &quot;admin&quot;,&#xd;
+                    &quot;encryptionMode&quot;: &quot;PLAIN_TEXT (без шифрования)&quot;,&#xd;
+                    &quot;port&quot;: &quot;21&quot;,&#xd;
+                    &quot;passiveMode&quot;: true&#xd;
+                },&#xd;
+                &quot;fileEncoding&quot;: &quot;UTF-8&quot;,&#xd;
+                &quot;clearCache&quot;: false,&#xd;
+                &quot;clearCacheType&quot;: &quot;ENTERED_MODELS&quot;,&#xd;
+                &quot;clearCacheModels&quot;: &quot;&quot;&#xd;
+            },&#xd;
+            {&#xd;
+                &quot;name&quot;: &quot;task_Загрузка_Справочников_из_Excel&quot;,&#xd;
+                &quot;executions&quot;:&#xd;
+                [&#xd;
+                    {&#xd;
+                        &quot;type&quot;: &quot;Load&quot;,&#xd;
+                        &quot;nameref&quot;: &quot;load_4&quot;,&#xd;
+                        &quot;ftpFileExpr&quot;: null&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;type&quot;: &quot;Load&quot;,&#xd;
+                        &quot;nameref&quot;: &quot;load_10&quot;,&#xd;
+                        &quot;ftpFileExpr&quot;: null&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;type&quot;: &quot;Load&quot;,&#xd;
+                        &quot;nameref&quot;: &quot;load_14&quot;,&#xd;
+                        &quot;ftpFileExpr&quot;: null&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;type&quot;: &quot;Load&quot;,&#xd;
+                        &quot;nameref&quot;: &quot;load_25&quot;,&#xd;
+                        &quot;ftpFileExpr&quot;: null&#xd;
+                    }&#xd;
+                ],&#xd;
+                &quot;comment&quot;: &quot;admin&quot;,&#xd;
+                &quot;fromFtp&quot;: false,&#xd;
+                &quot;ftpConfig&quot;:&#xd;
+                {&#xd;
+                    &quot;password&quot;: &quot;admin&quot;,&#xd;
+                    &quot;encryptionMode&quot;: &quot;PLAIN_TEXT (без шифрования)&quot;,&#xd;
+                    &quot;port&quot;: &quot;21&quot;,&#xd;
+                    &quot;passiveMode&quot;: true&#xd;
+                },&#xd;
+                &quot;fileEncoding&quot;: &quot;UTF-8&quot;,&#xd;
+                &quot;clearCache&quot;: false,&#xd;
+                &quot;clearCacheType&quot;: &quot;ENTERED_MODELS&quot;,&#xd;
+                &quot;clearCacheModels&quot;: &quot;&quot;&#xd;
+            }&#xd;
+        ]&#xd;
+    },&#xd;
+    &quot;jobName&quot;: &quot;task_Загрузка_ФВ3_из_Excel&quot;&#xd;
+}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+            <stringProp name="HTTPSampler.path">api/v1/execute</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="olap-host" elementType="Header">
+                  <stringProp name="Header.name">olap-host</stringProp>
+                  <stringProp name="Header.value">olap.n30-budget.x-dev.us:80</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="olap-sid" elementType="Header">
+                  <stringProp name="Header.name">olap-sid</stringProp>
+                  <stringProp name="Header.value">H9a0t6PuY68uG3muZ6Z7GcSpj3FpQ6Np</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-1350438031">Выполнено успешно</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-1111000565">Ошибок: 0</stringProp>
+                <stringProp name="485598322">Предупреждений: 0</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="logout" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://etl.planeta-ovfs.planetanalytics.ru/api/v1/logout" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/v1/logout</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="olap-host" elementType="Header">
+                  <stringProp name="Header.name">olap-host</stringProp>
+                  <stringProp name="Header.value">olap.n30-budget.x-dev.us:80</stringProp>
+                </elementProp>
+                <elementProp name="olap-sid" elementType="Header">
+                  <stringProp name="Header.name">olap-sid</stringProp>
+                  <stringProp name="Header.value">H9a0t6PuY68uG3muZ6Z7GcSpj3FpQ6Np</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://etl.planeta-ovfs.planetanalytics.ru/api/v1/build/info" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/v1/build/info</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="olap-host" elementType="Header">
+                  <stringProp name="Header.name">olap-host</stringProp>
+                  <stringProp name="Header.value"></stringProp>
+                </elementProp>
+                <elementProp name="olap-sid" elementType="Header">
+                  <stringProp name="Header.name">olap-sid</stringProp>
+                  <stringProp name="Header.value"></stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
