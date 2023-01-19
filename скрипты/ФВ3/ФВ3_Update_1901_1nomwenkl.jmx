@@ -596,6 +596,16 @@
             <intProp name="Assertion.test_type">20</intProp>
           </ResponseAssertion>
           <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1804247039">Unable to acquire JDBC Connection</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"> JDBC Connection!</stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">20</intProp>
+          </ResponseAssertion>
+          <hashTree/>
         </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://n30-budget.x-dev.us/data_api/v1.0/olapdata 32-4kv" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -975,6 +985,16 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1804247039">Unable to acquire JDBC Connection</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"> JDBC Connection!</stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">20</intProp>
+          </ResponseAssertion>
+          <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
               <stringProp name="-1804247039">Unable to acquire JDBC Connection</stringProp>
@@ -1374,6 +1394,16 @@
             <intProp name="Assertion.test_type">20</intProp>
           </ResponseAssertion>
           <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1804247039">Unable to acquire JDBC Connection</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"> JDBC Connection!</stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">20</intProp>
+          </ResponseAssertion>
+          <hashTree/>
         </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://n30-budget.x-dev.us/data_api/v1.0/olapdata 22-2kv" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -1753,6 +1783,16 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1804247039">Unable to acquire JDBC Connection</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"> JDBC Connection!</stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">20</intProp>
+          </ResponseAssertion>
+          <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
               <stringProp name="-1804247039">Unable to acquire JDBC Connection</stringProp>
@@ -2152,11 +2192,21 @@
             <intProp name="Assertion.test_type">20</intProp>
           </ResponseAssertion>
           <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1804247039">Unable to acquire JDBC Connection</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"> JDBC Connection!</stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">20</intProp>
+          </ResponseAssertion>
+          <hashTree/>
         </hashTree>
       </hashTree>
       <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="jp@gc - Ultimate Thread Group" enabled="true">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="-178270353">
+          <collectionProp name="1188300518">
             <stringProp name="1629">30</stringProp>
             <stringProp name="48">0</stringProp>
             <stringProp name="50547">300</stringProp>
@@ -2766,6 +2816,16 @@
               <intProp name="Assertion.test_type">20</intProp>
             </ResponseAssertion>
             <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion2" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1610479061">[ps_http_get]Ошибка подключения, не входящей в список пропускаемых, к серверу OLAP:[XX000],[Couldn&apos;t connect to server],LAP[1]</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message">Couldn&apos;t connect to server!</stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">20</intProp>
+            </ResponseAssertion>
+            <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://analytics.nt-budget.x-dev.us/access_api/sys-object/types" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
@@ -2922,6 +2982,16 @@
                 </elementProp>
               </collectionProp>
             </HeaderManager>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion2" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1610479061">[ps_http_get]Ошибка подключения, не входящей в список пропускаемых, к серверу OLAP:[XX000],[Couldn&apos;t connect to server],LAP[1]</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message">Couldn&apos;t connect to server!</stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">20</intProp>
+            </ResponseAssertion>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://analytics.nt-budget.x-dev.us/data_api/v1.0/olapdata dimension_data 2 Открытие ФВ3" enabled="true">
@@ -3114,6 +3184,16 @@
                 </elementProp>
               </collectionProp>
             </HeaderManager>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion2" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1610479061">[ps_http_get]Ошибка подключения, не входящей в список пропускаемых, к серверу OLAP:[XX000],[Couldn&apos;t connect to server],LAP[1]</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message">Couldn&apos;t connect to server!</stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">20</intProp>
+            </ResponseAssertion>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://analytics.nt-budget.x-dev.us/data_api/v1.0/olapdata data2 1 Открытие ФВ3" enabled="true">
@@ -3518,6 +3598,16 @@
               </collectionProp>
             </HeaderManager>
             <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion2" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1610479061">[ps_http_get]Ошибка подключения, не входящей в список пропускаемых, к серверу OLAP:[XX000],[Couldn&apos;t connect to server],LAP[1]</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message">Couldn&apos;t connect to server!</stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">20</intProp>
+            </ResponseAssertion>
+            <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://analytics.nt-budget.x-dev.us/data_api/v1.0/olapdata data2 2 Открытие ФВ3" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -3909,9 +3999,19 @@
               </collectionProp>
             </HeaderManager>
             <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion2" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1610479061">[ps_http_get]Ошибка подключения, не входящей в список пропускаемых, к серверу OLAP:[XX000],[Couldn&apos;t connect to server],LAP[1]</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message">Couldn&apos;t connect to server!</stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">20</intProp>
+            </ResponseAssertion>
+            <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction &quot;Выбор БЕ  ФВ.3&quot;" enabled="true">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction &quot;Выбор БЕ и ЦФО ФВ.3&quot;" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
           <boolProp name="TransactionController.parent">false</boolProp>
         </TransactionController>
@@ -4024,6 +4124,16 @@ vars.put(&quot;be_name&quot;, rand_be_name);
                 <stringProp name="-1804247039">Unable to acquire JDBC Connection</stringProp>
               </collectionProp>
               <stringProp name="Assertion.custom_message"> JDBC Connection!</stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">20</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion2" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1610479061">[ps_http_get]Ошибка подключения, не входящей в список пропускаемых, к серверу OLAP:[XX000],[Couldn&apos;t connect to server],LAP[1]</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message">Couldn&apos;t connect to server!</stringProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">20</intProp>
@@ -4514,48 +4624,17 @@ vars.put(&quot;be_name&quot;, rand_be_name);
               <intProp name="Assertion.test_type">20</intProp>
             </ResponseAssertion>
             <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion2" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1610479061">[ps_http_get]Ошибка подключения, не входящей в список пропускаемых, к серверу OLAP:[XX000],[Couldn&apos;t connect to server],LAP[1]</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message">Couldn&apos;t connect to server!</stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">20</intProp>
+            </ResponseAssertion>
+            <hashTree/>
           </hashTree>
-        </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction &quot;Выбор ЦФО 1 номенклатура ФВ.3&quot;" enabled="true">
-          <boolProp name="TransactionController.includeTimers">false</boolProp>
-          <boolProp name="TransactionController.parent">false</boolProp>
-        </TransactionController>
-        <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
-            <collectionProp name="HeaderManager.headers">
-              <elementProp name="Content-Type" elementType="Header">
-                <stringProp name="Header.name">Content-Type</stringProp>
-                <stringProp name="Header.value">application/json</stringProp>
-              </elementProp>
-            </collectionProp>
-          </HeaderManager>
-          <hashTree/>
-          <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Random Variable ЦФО" enabled="true">
-            <stringProp name="variableName">n_cfo</stringProp>
-            <stringProp name="outputFormat">0</stringProp>
-            <stringProp name="minimumValue">1</stringProp>
-            <stringProp name="maximumValue">1</stringProp>
-            <stringProp name="randomSeed"></stringProp>
-            <boolProp name="perThread">true</boolProp>
-          </RandomVariableConfig>
-          <hashTree/>
-          <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="JSR223 Sampler" enabled="true">
-            <stringProp name="TestPlan.comments">Возвращает переменную Value1, в которой лежит набор переменных на id номенклатуры, количество в наборе от 1 до nomenklatura_matchNr</stringProp>
-            <stringProp name="cacheKey">true</stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="script">String rand = vars.get(&quot;n_cfo&quot;);
-int r = rand as Integer;
-
-String rand_cfo = &apos;${id_cfo_new_&apos;+r+&apos;}&apos;;
-String rand_cfo_name = &apos;${NAME_cfo_new_&apos;+r+&apos;}&apos;;
-
-vars.put(&quot;cfo&quot;, rand_cfo);
-vars.put(&quot;cfo_name&quot;, rand_cfo_name);
-</stringProp>
-            <stringProp name="scriptLanguage">groovy</stringProp>
-          </JSR223Sampler>
-          <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://n30-budget.x-dev.us/data_api/v1.0/olapdata data2 ЦФО" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
@@ -4959,6 +5038,16 @@ vars.put(&quot;cfo_name&quot;, rand_cfo_name);
               <intProp name="Assertion.test_type">20</intProp>
             </ResponseAssertion>
             <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion2" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1610479061">[ps_http_get]Ошибка подключения, не входящей в список пропускаемых, к серверу OLAP:[XX000],[Couldn&apos;t connect to server],LAP[1]</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message">Couldn&apos;t connect to server!</stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">20</intProp>
+            </ResponseAssertion>
+            <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://n30-budget.x-dev.us/data_api/v1.0/olapdata dimension_data ЦФО" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -5033,6 +5122,16 @@ vars.put(&quot;cfo_name&quot;, rand_cfo_name);
                 <stringProp name="-1804247039">Unable to acquire JDBC Connection</stringProp>
               </collectionProp>
               <stringProp name="Assertion.custom_message"> JDBC Connection!</stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">20</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion2" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1610479061">[ps_http_get]Ошибка подключения, не входящей в список пропускаемых, к серверу OLAP:[XX000],[Couldn&apos;t connect to server],LAP[1]</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message">Couldn&apos;t connect to server!</stringProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">20</intProp>
@@ -5473,7 +5572,28 @@ vars.put(&quot;Value1&quot;, Value1);
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
             </HTTPSamplerProxy>
-            <hashTree/>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion2" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="1610479061">[ps_http_get]Ошибка подключения, не входящей в список пропускаемых, к серверу OLAP:[XX000],[Couldn&apos;t connect to server],LAP[1]</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message">Couldn&apos;t connect to server!</stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">20</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1804247039">Unable to acquire JDBC Connection</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"> JDBC Connection!</stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">20</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Выбор номенклатуры ФВ3 dimension_data" enabled="true">
               <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
@@ -5538,7 +5658,28 @@ vars.put(&quot;Value1&quot;, Value1);
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
             </HTTPSamplerProxy>
-            <hashTree/>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion2" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="1610479061">[ps_http_get]Ошибка подключения, не входящей в список пропускаемых, к серверу OLAP:[XX000],[Couldn&apos;t connect to server],LAP[1]</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message">Couldn&apos;t connect to server!</stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">20</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1804247039">Unable to acquire JDBC Connection</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"> JDBC Connection!</stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">20</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
           </hashTree>
         </hashTree>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Разворот года и 4 кварталов с списком номенклатуры ФВ.3" enabled="true">
@@ -5941,6 +6082,16 @@ vars.put(&quot;Value1&quot;, Value1);
               <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
                 <stringProp name="ConstantTimer.delay">10000</stringProp>
               </ConstantTimer>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1804247039">Unable to acquire JDBC Connection</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"> JDBC Connection!</stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">20</intProp>
+              </ResponseAssertion>
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
@@ -6803,6 +6954,16 @@ vars.put(&quot;Value1&quot;, Value1);
                 <intProp name="Assertion.test_type">20</intProp>
               </ResponseAssertion>
               <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1804247039">Unable to acquire JDBC Connection</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"> JDBC Connection!</stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">20</intProp>
+              </ResponseAssertion>
+              <hashTree/>
             </hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://n30-budget.x-dev.us/data_api/v1.0/olapdata(15-2023year) Сохранение" enabled="true">
               <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -7198,6 +7359,16 @@ vars.put(&quot;Value1&quot;, Value1);
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
             </HTTPSamplerProxy>
             <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1804247039">Unable to acquire JDBC Connection</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"> JDBC Connection!</stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">20</intProp>
+              </ResponseAssertion>
+              <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="-1804247039">Unable to acquire JDBC Connection</stringProp>
@@ -7613,6 +7784,16 @@ vars.put(&quot;Value1&quot;, Value1);
                 <intProp name="Assertion.test_type">20</intProp>
               </ResponseAssertion>
               <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1804247039">Unable to acquire JDBC Connection</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"> JDBC Connection!</stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">20</intProp>
+              </ResponseAssertion>
+              <hashTree/>
             </hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://n30-budget.x-dev.us/data_api/v1.0/olapdata 26-3kv Сохранение" enabled="true">
               <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -8008,6 +8189,16 @@ vars.put(&quot;Value1&quot;, Value1);
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
             </HTTPSamplerProxy>
             <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1804247039">Unable to acquire JDBC Connection</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"> JDBC Connection!</stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">20</intProp>
+              </ResponseAssertion>
+              <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="-1804247039">Unable to acquire JDBC Connection</stringProp>
@@ -8423,6 +8614,16 @@ vars.put(&quot;Value1&quot;, Value1);
                 <intProp name="Assertion.test_type">20</intProp>
               </ResponseAssertion>
               <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1804247039">Unable to acquire JDBC Connection</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"> JDBC Connection!</stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">20</intProp>
+              </ResponseAssertion>
+              <hashTree/>
             </hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://n30-budget.x-dev.us/data_api/v1.0/olapdata 19-1kv Сохранение" enabled="true">
               <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -8828,6 +9029,16 @@ vars.put(&quot;Value1&quot;, Value1);
                 <intProp name="Assertion.test_type">20</intProp>
               </ResponseAssertion>
               <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1804247039">Unable to acquire JDBC Connection</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"> JDBC Connection!</stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">20</intProp>
+              </ResponseAssertion>
+              <hashTree/>
             </hashTree>
           </hashTree>
         </hashTree>
@@ -8850,13 +9061,13 @@ vars.put(&quot;Value1&quot;, Value1);
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
-        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="false">
           <boolProp name="displayJMeterProperties">false</boolProp>
           <boolProp name="displayJMeterVariables">true</boolProp>
           <boolProp name="displaySystemProperties">false</boolProp>
         </DebugSampler>
         <hashTree/>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree Отдладка" enabled="true">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree Отдладка" enabled="false">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
