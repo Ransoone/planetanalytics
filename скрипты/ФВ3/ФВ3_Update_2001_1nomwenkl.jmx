@@ -2221,23 +2221,6 @@
         </elementProp>
       </kg.apc.jmeter.threads.SteppingThreadGroup>
       <hashTree>
-        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
-          <intProp name="ActionProcessor.action">1</intProp>
-          <intProp name="ActionProcessor.target">0</intProp>
-          <stringProp name="ActionProcessor.duration">0</stringProp>
-          <stringProp name="TestPlan.comments">pacing</stringProp>
-        </TestAction>
-        <hashTree>
-          <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="true">
-            <doubleProp>
-              <name>throughput</name>
-              <value>0.2</value>
-              <savedValue>0.0</savedValue>
-            </doubleProp>
-            <intProp name="calcMode">0</intProp>
-          </ConstantThroughputTimer>
-          <hashTree/>
-        </hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Авторизация! ФВ.3" enabled="true">
           <stringProp name="IncludeController.includepath">C:\Users\User\Documents\GitHub\planetanalytics\скрипты\Авторизация.jmx</stringProp>
         </IncludeController>
@@ -5698,23 +5681,14 @@ vars.put(&quot;Value1&quot;, Value1);
         </hashTree>
         <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller (сохранение значений в таблицу) " enabled="true">
           <boolProp name="LoopController.continue_forever">true</boolProp>
-          <stringProp name="LoopController.loops">10</stringProp>
+          <stringProp name="LoopController.loops">1</stringProp>
         </LoopController>
         <hashTree>
-          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
-            <stringProp name="ConstantTimer.delay">20000</stringProp>
-          </ConstantTimer>
-          <hashTree/>
           <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction  &quot;Сохранение данных&quot; ФВ.3" enabled="true">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
             <boolProp name="TransactionController.parent">false</boolProp>
           </TransactionController>
           <hashTree>
-            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
-              <stringProp name="TestPlan.comments">Пауза между сохранениями.</stringProp>
-              <stringProp name="ConstantTimer.delay">30000</stringProp>
-            </ConstantTimer>
-            <hashTree/>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
               <collectionProp name="HeaderManager.headers">
                 <elementProp name="Content-Type" elementType="Header">
@@ -5753,7 +5727,7 @@ vars.put(&quot;Value1&quot;, Value1);
                         &quot;13&quot;: &quot;4&quot;,&#xd;
                         &quot;15&quot;: &quot;2&quot;,&#xd;
                         &quot;17&quot;: &quot;${__evalVar(be)}&quot;,&#xd;
-                        &quot;19&quot;: &quot;${__evalVar(cfo)}&quot;,&#xd;
+                        &quot;19&quot;: &quot;${id_cfo_new_1}&quot;,&#xd;
                         &quot;21&quot;: &quot;0&quot;,&#xd;
                         &quot;23&quot;: &quot;1&quot;,&#xd;
                         &quot;25&quot;: &quot;20&quot;,&#xd;
@@ -5779,7 +5753,7 @@ vars.put(&quot;Value1&quot;, Value1);
                         &quot;13&quot;: &quot;4&quot;,&#xd;
                         &quot;15&quot;: &quot;2&quot;,&#xd;
                         &quot;17&quot;: &quot;${__evalVar(be)}&quot;,&#xd;
-                        &quot;19&quot;: &quot;${__evalVar(cfo)}&quot;,&#xd;
+                        &quot;19&quot;: &quot;${id_cfo_new_1}&quot;,&#xd;
                         &quot;21&quot;: &quot;0&quot;,&#xd;
                         &quot;23&quot;: &quot;1&quot;,&#xd;
                         &quot;25&quot;: &quot;21&quot;,&#xd;
@@ -5805,7 +5779,7 @@ vars.put(&quot;Value1&quot;, Value1);
                         &quot;13&quot;: &quot;4&quot;,&#xd;
                         &quot;15&quot;: &quot;2&quot;,&#xd;
                         &quot;17&quot;: &quot;${__evalVar(be)}&quot;,&#xd;
-                        &quot;19&quot;: &quot;${__evalVar(cfo)}&quot;,&#xd;
+                        &quot;19&quot;: &quot;${id_cfo_new_1}&quot;,&#xd;
                         &quot;21&quot;: &quot;0&quot;,&#xd;
                         &quot;23&quot;: &quot;1&quot;,&#xd;
                         &quot;25&quot;: &quot;24&quot;,&#xd;
@@ -5831,7 +5805,7 @@ vars.put(&quot;Value1&quot;, Value1);
                         &quot;13&quot;: &quot;4&quot;,&#xd;
                         &quot;15&quot;: &quot;2&quot;,&#xd;
                         &quot;17&quot;: &quot;${__evalVar(be)}&quot;,&#xd;
-                        &quot;19&quot;: &quot;${__evalVar(cfo)}&quot;,&#xd;
+                        &quot;19&quot;: &quot;${id_cfo_new_1}&quot;,&#xd;
                         &quot;21&quot;: &quot;0&quot;,&#xd;
                         &quot;23&quot;: &quot;1&quot;,&#xd;
                         &quot;25&quot;: &quot;23&quot;,&#xd;
@@ -5857,7 +5831,7 @@ vars.put(&quot;Value1&quot;, Value1);
                         &quot;13&quot;: &quot;4&quot;,&#xd;
                         &quot;15&quot;: &quot;2&quot;,&#xd;
                         &quot;17&quot;: &quot;${__evalVar(be)}&quot;,&#xd;
-                        &quot;19&quot;: &quot;${__evalVar(cfo)}&quot;,&#xd;
+                        &quot;19&quot;: &quot;${id_cfo_new_1}&quot;,&#xd;
                         &quot;21&quot;: &quot;0&quot;,&#xd;
                         &quot;23&quot;: &quot;1&quot;,&#xd;
                         &quot;25&quot;: &quot;25&quot;,&#xd;
@@ -5883,7 +5857,7 @@ vars.put(&quot;Value1&quot;, Value1);
                         &quot;13&quot;: &quot;4&quot;,&#xd;
                         &quot;15&quot;: &quot;2&quot;,&#xd;
                         &quot;17&quot;: &quot;${__evalVar(be)}&quot;,&#xd;
-                        &quot;19&quot;: &quot;${__evalVar(cfo)}&quot;,&#xd;
+                        &quot;19&quot;: &quot;${id_cfo_new_1}&quot;,&#xd;
                         &quot;21&quot;: &quot;0&quot;,&#xd;
                         &quot;23&quot;: &quot;1&quot;,&#xd;
                         &quot;25&quot;: &quot;28&quot;,&#xd;
@@ -5909,7 +5883,7 @@ vars.put(&quot;Value1&quot;, Value1);
                         &quot;13&quot;: &quot;4&quot;,&#xd;
                         &quot;15&quot;: &quot;2&quot;,&#xd;
                         &quot;17&quot;: &quot;${__evalVar(be)}&quot;,&#xd;
-                        &quot;19&quot;: &quot;${__evalVar(cfo)}&quot;,&#xd;
+                        &quot;19&quot;: &quot;${id_cfo_new_1}&quot;,&#xd;
                         &quot;21&quot;: &quot;0&quot;,&#xd;
                         &quot;23&quot;: &quot;1&quot;,&#xd;
                         &quot;25&quot;: &quot;29&quot;,&#xd;
@@ -5935,7 +5909,7 @@ vars.put(&quot;Value1&quot;, Value1);
                         &quot;13&quot;: &quot;4&quot;,&#xd;
                         &quot;15&quot;: &quot;2&quot;,&#xd;
                         &quot;17&quot;: &quot;${__evalVar(be)}&quot;,&#xd;
-                        &quot;19&quot;: &quot;${__evalVar(cfo)}&quot;,&#xd;
+                        &quot;19&quot;: &quot;${id_cfo_new_1}&quot;,&#xd;
                         &quot;21&quot;: &quot;0&quot;,&#xd;
                         &quot;23&quot;: &quot;1&quot;,&#xd;
                         &quot;25&quot;: &quot;30&quot;,&#xd;
@@ -5961,7 +5935,7 @@ vars.put(&quot;Value1&quot;, Value1);
                         &quot;13&quot;: &quot;4&quot;,&#xd;
                         &quot;15&quot;: &quot;2&quot;,&#xd;
                         &quot;17&quot;: &quot;${__evalVar(be)}&quot;,&#xd;
-                        &quot;19&quot;: &quot;${__evalVar(cfo)}&quot;,&#xd;
+                        &quot;19&quot;: &quot;${id_cfo_new_1}&quot;,&#xd;
                         &quot;21&quot;: &quot;0&quot;,&#xd;
                         &quot;23&quot;: &quot;1&quot;,&#xd;
                         &quot;25&quot;: &quot;31&quot;,&#xd;
@@ -5987,7 +5961,7 @@ vars.put(&quot;Value1&quot;, Value1);
                         &quot;13&quot;: &quot;4&quot;,&#xd;
                         &quot;15&quot;: &quot;2&quot;,&#xd;
                         &quot;17&quot;: &quot;${__evalVar(be)}&quot;,&#xd;
-                        &quot;19&quot;: &quot;${__evalVar(cfo)}&quot;,&#xd;
+                        &quot;19&quot;: &quot;${id_cfo_new_1}&quot;,&#xd;
                         &quot;21&quot;: &quot;0&quot;,&#xd;
                         &quot;23&quot;: &quot;1&quot;,&#xd;
                         &quot;25&quot;: &quot;33&quot;,&#xd;
@@ -6013,7 +5987,7 @@ vars.put(&quot;Value1&quot;, Value1);
                         &quot;13&quot;: &quot;4&quot;,&#xd;
                         &quot;15&quot;: &quot;2&quot;,&#xd;
                         &quot;17&quot;: &quot;${__evalVar(be)}&quot;,&#xd;
-                        &quot;19&quot;: &quot;${__evalVar(cfo)}&quot;,&#xd;
+                        &quot;19&quot;: &quot;${id_cfo_new_1}&quot;,&#xd;
                         &quot;21&quot;: &quot;0&quot;,&#xd;
                         &quot;23&quot;: &quot;1&quot;,&#xd;
                         &quot;25&quot;: &quot;34&quot;,&#xd;
@@ -6039,7 +6013,7 @@ vars.put(&quot;Value1&quot;, Value1);
                         &quot;13&quot;: &quot;4&quot;,&#xd;
                         &quot;15&quot;: &quot;2&quot;,&#xd;
                         &quot;17&quot;: &quot;${__evalVar(be)}&quot;,&#xd;
-                        &quot;19&quot;: &quot;${__evalVar(cfo)}&quot;,&#xd;
+                        &quot;19&quot;: &quot;${id_cfo_new_1}&quot;,&#xd;
                         &quot;21&quot;: &quot;0&quot;,&#xd;
                         &quot;23&quot;: &quot;1&quot;,&#xd;
                         &quot;25&quot;: &quot;35&quot;,&#xd;
@@ -6083,29 +6057,49 @@ vars.put(&quot;Value1&quot;, Value1);
               <stringProp name="TestPlan.comments">Выбирается рандомная номенклатура</stringProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
-                <stringProp name="ConstantTimer.delay">10000</stringProp>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1804247039">Unable to acquire JDBC Connection</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"> JDBC Connection!</stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">20</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1804247039">Unable to acquire JDBC Connection</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"> JDBC Connection!</stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">20</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="1783789965">&quot;status&quot;: &quot;SUCCESS&quot;</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"></stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">20</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="700755742">&quot;message&quot;: &quot;SUCCESS&quot;</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"></stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">20</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+                <stringProp name="ConstantTimer.delay">20000</stringProp>
               </ConstantTimer>
-              <hashTree/>
-              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-                <collectionProp name="Asserion.test_strings">
-                  <stringProp name="-1804247039">Unable to acquire JDBC Connection</stringProp>
-                </collectionProp>
-                <stringProp name="Assertion.custom_message"> JDBC Connection!</stringProp>
-                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-                <boolProp name="Assertion.assume_success">false</boolProp>
-                <intProp name="Assertion.test_type">20</intProp>
-              </ResponseAssertion>
-              <hashTree/>
-              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-                <collectionProp name="Asserion.test_strings">
-                  <stringProp name="-1804247039">Unable to acquire JDBC Connection</stringProp>
-                </collectionProp>
-                <stringProp name="Assertion.custom_message"> JDBC Connection!</stringProp>
-                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-                <boolProp name="Assertion.assume_success">false</boolProp>
-                <intProp name="Assertion.test_type">20</intProp>
-              </ResponseAssertion>
               <hashTree/>
             </hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Обновление 1 номенклатыры по 12 месяцам dimension_data" enabled="true">
@@ -6912,7 +6906,7 @@ vars.put(&quot;Value1&quot;, Value1);
                             &quot;version&quot;: 1,&#xd;
                             &quot;values&quot;:&#xd;
                             [&#xd;
-                                &quot;${__evalVar(cfo)}&quot;&#xd;
+                                &quot;${NAME_cfo_new_1}&quot;&#xd;
                             ]&#xd;
                         }&#xd;
                     ]&#xd;
@@ -9065,12 +9059,6 @@ vars.put(&quot;Value1&quot;, Value1);
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
-        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="false">
-          <boolProp name="displayJMeterProperties">false</boolProp>
-          <boolProp name="displayJMeterVariables">true</boolProp>
-          <boolProp name="displaySystemProperties">false</boolProp>
-        </DebugSampler>
-        <hashTree/>
         <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree Отдладка" enabled="false">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
