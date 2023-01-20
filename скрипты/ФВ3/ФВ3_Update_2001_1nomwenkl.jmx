@@ -5681,7 +5681,7 @@ vars.put(&quot;Value1&quot;, Value1);
         </hashTree>
         <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller (сохранение значений в таблицу) " enabled="true">
           <boolProp name="LoopController.continue_forever">true</boolProp>
-          <stringProp name="LoopController.loops">1</stringProp>
+          <stringProp name="LoopController.loops">10</stringProp>
         </LoopController>
         <hashTree>
           <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction  &quot;Сохранение данных&quot; ФВ.3" enabled="true">
