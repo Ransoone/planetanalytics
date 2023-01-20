@@ -16,7 +16,7 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="project_name" elementType="Argument">
             <stringProp name="Argument.name">project_name</stringProp>
-            <stringProp name="Argument.value">${__P(project_name,O3FV3)}</stringProp>
+            <stringProp name="Argument.value">${__P(project_name,FV3)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">Project1/Eshop/APItest/Debug</stringProp>
           </elementProp>
@@ -9041,6 +9041,10 @@ vars.put(&quot;Value1&quot;, Value1);
               <hashTree/>
             </hashTree>
           </hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">20000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
         </hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Разлогин! ФВ.3" enabled="true">
           <stringProp name="IncludeController.includepath">C:\Users\User\Documents\GitHub\planetanalytics\скрипты\Разлогин.jmx</stringProp>
